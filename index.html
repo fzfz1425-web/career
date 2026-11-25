@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7f5">
+  <meta name="description" content="عرض تقديمي تفاعلي لبناء الهوية المهنية والسيرة الذاتية واكتساب مهارات سوق العمل.">
+
+  <title>بوابتك إلى المستقبل المهني</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="topbar">
+      <a href="#" class="brand">
+        <span class="brand-mark">M</span>
+        <span>المستقبل المهني</span>
+      </a>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="تغيير المظهر" title="تغيير المظهر">
+          <span id="themeIcon">☾</span>
+        </button>
+
+        <button class="icon-btn" id="fullscreenBtn" aria-label="ملء الشاشة" title="ملء الشاشة">
+          ⛶
+        </button>
+      </div>
+    </header>
+
+    <main class="presentation">
+
+      <div class="slide-area">
+
+        <div class="slide-counter">
+          <span id="currentNumber">01</span>
+          <span class="counter-line"></span>
+          <span id="totalNumber">12</span>
+        </div>
+
+        <section id="slideContent" class="slide-content" aria-live="polite">
+          <!-- الشرائح تظهر هنا بواسطة JavaScript -->
+        </section>
+
+      </div>
+
+      <footer class="controls">
+
+        <div class="progress-container">
+          <div class="progress-track">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <span id="progressText">8%</span>
+        </div>
+
+        <div class="navigation">
+
+          <button id="prevBtn" class="nav-btn secondary" disabled>
+            السابق
+            <span>→</span>
+          </button>
+
+          <button id="nextBtn" class="nav-btn primary">
+            التالي
+            <span>←</span>
+          </button>
+
+        </div>
+
+        <div class="keyboard-hint">
+          استخدمي الأسهم للتنقل بين الشرائح
+        </div>
+
+      </footer>
+
+    </main>
+
+    <div class="bottom-decoration"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
